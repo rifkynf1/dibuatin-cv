@@ -49,7 +49,7 @@ dibuatin-cv/
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/rifkynf/dibuatin-cv.git
+   git clone https://github.com/rifkynf1/dibuatin-cv.git
    ```
 
 2. Navigate to project folder:
