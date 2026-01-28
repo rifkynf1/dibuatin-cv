@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D'CV - Professional CV Website Templates</title>
+    <meta
+      name="description"
+      content="Create a professional CV website with modern design. Choose from minimalist or premium templates, fast processing, responsive, and ready to go online." />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'><stop offset='0%25' style='stop-color:%239333ea'/><stop offset='100%25' style='stop-color:%233b82f6'/></linearGradient></defs><text y='.85em' font-size='32' font-weight='bold' fill='url(%23g)' font-family='Arial'>D'CV</text></svg>" />
+
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet" />
+
+    <!-- Tailwind CSS v4 via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @custom-variant dark (&:where(.dark, .dark *));
+      @theme {
+        --font-family-sans: "Inter", sans-serif;
+      }
+    </style>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="src/css/custom.css" />
+  </head>
+  <body
+    class="app-bg font-sans antialiased text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Header -->
+    <header
+      class="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-white/80 dark:bg-black/50 border-b border-gray-200/50 dark:border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Logo -->
+          <a href="#" class="flex items-center space-x-2">
+            <span
+              class="text-xl font-extrabold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
+              >D'CV</span
+            >
+            <span
+              class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+              Dibuatin CV
+            </span>
+          </a>
+
+          <!-- Nav Actions -->
+          <div class="flex items-center space-x-4">
+            <!-- Theme Toggle -->
+            <button
+              id="theme-toggle"
+              class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition-colors"
+              aria-label="Toggle theme">
+              <!-- Sun icon (shown in light mode) -->
+              <svg
+                id="sun-icon"
+                class="w-5 h-5 text-yellow-500"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  fill-rule="evenodd"
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                  clip-rule="evenodd" />
+              </svg>
+              <!-- Moon icon (shown in dark mode) -->
+              <svg
+                id="moon-icon"
+                class="w-5 h-5 text-gray-700 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20">
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+              </svg>
+            </button>
+
+            <!-- CTA Button -->
+            <a
+              href="#models"
+              class="hidden sm:inline-flex items-center px-4 py-2 rounded-full text-sm font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 transition-all shadow-lg hover:shadow-purple-500/25">
+              Order Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <!-- Decorative elements -->
+      <div
+        class="absolute top-20 left-10 w-72 h-72 bg-purple-500/30 rounded-full filter blur-3xl float-animation"></div>
+      <div
+        class="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/20 rounded-full filter blur-3xl float-animation"
+        style="animation-delay: -3s"></div>
+
+      <div class="max-w-4xl mx-auto text-center relative z-10">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          <span
+            class="bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 bg-clip-text text-transparent">
+            Modern CV Website
+          </span>
+          <br />
+          <span class="text-gray-900 dark:text-white">Ready to Impress</span>
+        </h1>
+
+        <p
+          class="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          Elevate your personal branding with a professional CV website. Fast
+          processing, responsive design, and dark/light mode available.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a
+            href="#models"
+            class="btn-primary inline-flex items-center justify-center px-8 py-4 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-purple-600 to-blue-500 hover:from-purple-700 hover:to-blue-600 transition-all shadow-xl hover:shadow-purple-500/30 hover:-translate-y-1">
+            Choose Model
+          </a>
+          <a
+            href="#how-it-works"
+            class="inline-flex items-center justify-center px-6 py-3 rounded-xl border-2 border-gray-300 dark:border-white/20 text-gray-700 dark:text-gray-300 hover:border-purple-500 hover:text-purple-600 dark:hover:text-purple-400 transition-all bg-white/50 dark:bg-white/5 backdrop-blur-sm">
+            How to Order
+          </a>
+        </div>
+
+        <!-- Trust badges -->
+        <div
+          class="mt-12 flex flex-wrap items-center justify-center gap-6 text-sm text-gray-500 dark:text-gray-400">
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Responsive Design</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Dark & Light Mode</span>
+          </div>
+          <div class="flex items-center">
+            <svg
+              class="w-5 h-5 mr-2 text-green-500"
+              fill="currentColor"
+              viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                clip-rule="evenodd" />
+            </svg>
+            <span>Fast Processing</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV Models Section -->
+    <section id="models" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">Choose CV Model</h2>
+          <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Two design options to match your needs and budget
+          </p>
+        </div>
+
+        <!-- Model Cards Container -->
+        <div id="model-cards" class="grid md:grid-cols-2 gap-8">
+          <!-- Cards will be rendered by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Package Selection Section -->
+    <section
+      id="packages"
+      class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50/50 dark:bg-black/20">
+      <div class="max-w-4xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">Choose Package</h2>
+          <p class="text-gray-600 dark:text-gray-400">
+            Select the package that suits your needs
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <!-- Template Only -->
+          <label
+            class="package-card cursor-pointer flex flex-col h-full p-6 rounded-2xl border-2 border-gray-200 dark:border-white/10 bg-white/80 dark:bg-white/5 backdrop-blur-lg hover:border-purple-400 dark:hover:border-purple-400 transition-all has-[:checked]:border-purple-500 has-[:checked]:ring-2 has-[:checked]:ring-purple-500/30">
+            <input
+              type="radio"
+              name="package"
+              value="TEMPLATE"
+              class="sr-only"
+              id="pkg-template" />
+            <div class="flex items-start justify-between flex-1">
+              <div>
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Template Only
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                  Ready-to-use template files, self-hosting
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    Complete HTML/CSS/JS files
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    Customization guide
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    1 minor revision
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="radio-template"
+                class="radio-indicator w-6 h-6 rounded-full border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center transition-all has-[:checked]:border-purple-500 has-[:checked]:bg-purple-500">
+                <svg
+                  class="radio-check w-4 h-4 text-white hidden has-[:checked]:block"
+                  fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="mt-4 pt-4 border-t border-gray-200 dark:border-white/10">
+              <span class="text-sm text-gray-500 dark:text-gray-400"
+                >Starting from</span
+              >
+              <span
+                class="text-2xl font-bold text-purple-600 dark:text-purple-400 ml-2"
+                >Rp 250.000</span
+              >
+            </div>
+          </label>
+
+          <!-- Full Package -->
+          <label
+            class="package-card cursor-pointer flex flex-col h-full p-6 rounded-2xl border-2 border-gray-200 dark:border-white/10 bg-white/80 dark:bg-white/5 backdrop-blur-lg relative overflow-hidden transition-all has-[:checked]:border-purple-500 has-[:checked]:ring-2 has-[:checked]:ring-purple-500/30">
+            <div
+              class="absolute top-0 right-0 bg-gradient-to-r from-purple-600 to-blue-500 text-white text-xs font-semibold px-4 py-1 rounded-bl-lg">
+              POPULAR
+            </div>
+            <input
+              type="radio"
+              name="package"
+              value="PAKET_LENGKAP"
+              class="sr-only"
+              id="pkg-lengkap" />
+            <div class="flex items-start justify-between flex-1">
+              <div>
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  Full Package
+                </h3>
+                <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">
+                  Hosting + custom domain request + ready to go online
+                </p>
+                <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    All Template features
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    1 year hosting
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    Custom domain (request)
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    Setup & deploy included
+                  </li>
+                  <li class="flex items-center">
+                    <svg
+                      class="w-4 h-4 mr-2 text-green-500"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd" />
+                    </svg>
+                    3 revisions
+                  </li>
+                </ul>
+              </div>
+              <div
+                id="radio-lengkap"
+                class="radio-indicator w-6 h-6 rounded-full border-2 border-gray-300 dark:border-gray-600 flex items-center justify-center transition-all has-[:checked]:border-purple-500 has-[:checked]:bg-purple-500">
+                <svg
+                  class="radio-check w-4 h-4 text-white hidden has-[:checked]:block"
+                  fill="currentColor"
+                  viewBox="0 0 20 20">
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="mt-4 pt-4 border-t border-gray-200 dark:border-white/10">
+              <span class="text-sm text-gray-500 dark:text-gray-400"
+                >Fixed price</span
+              >
+              <span
+                class="text-2xl font-bold text-purple-600 dark:text-purple-400 ml-2"
+                >Rp 500.000</span
+              >
+            </div>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Summary (Desktop) -->
+    <section id="summary" class="py-20 px-4 sm:px-6 lg:px-8 hidden md:block">
+      <div class="max-w-2xl mx-auto">
+        <div class="glass-card rounded-3xl p-8 bg-white/90 dark:bg-white/5">
+          <h2 class="text-2xl font-bold mb-6 text-center">Order Summary</h2>
+
+          <div class="space-y-4 mb-6">
+            <div
+              class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-white/10">
+              <span class="text-gray-600 dark:text-gray-400">CV Model</span>
+              <span
+                id="summary-model"
+                class="font-semibold text-gray-900 dark:text-white"
+                >Not selected</span
+              >
+            </div>
+            <div
+              class="flex justify-between items-center py-3 border-b border-gray-200 dark:border-white/10">
+              <span class="text-gray-600 dark:text-gray-400">Package</span>
+              <span
+                id="summary-package"
+                class="font-semibold text-gray-900 dark:text-white"
+                >Not selected</span
+              >
+            </div>
+            <div class="flex justify-between items-center py-3">
+              <span class="text-gray-600 dark:text-gray-400">Total Price</span>
+              <span
+                id="summary-price"
+                class="text-3xl font-bold text-purple-600 dark:text-purple-400"
+                >-</span
+              >
+            </div>
+          </div>
+
+          <button
+            id="order-btn"
+            disabled
+            class="btn-primary w-full py-4 rounded-xl text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 transition-all shadow-lg hover:shadow-green-500/30 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            <span>Order via WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">How to Order</h2>
+          <p class="text-gray-600 dark:text-gray-400">
+            Easy and fast process to get your CV website
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Step 1 -->
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-4">1</div>
+            <h3 class="font-bold text-lg mb-2">Choose Model</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              Select the CV design that matches your style
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-4">2</div>
+            <h3 class="font-bold text-lg mb-2">Choose Package</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              Template only or full package with hosting
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-4">3</div>
+            <h3 class="font-bold text-lg mb-2">Order via WA</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              Click order and chat directly with the maker
+            </p>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="text-center">
+            <div class="step-circle mx-auto mb-4">4</div>
+            <h3 class="font-bold text-lg mb-2">Receive Result</h3>
+            <p class="text-gray-600 dark:text-gray-400 text-sm">
+              Pay and receive your CV website in 1-3 days
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section
+      id="faq"
+      class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50/50 dark:bg-black/20">
+      <div class="max-w-3xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl sm:text-4xl font-bold mb-4">FAQ</h2>
+          <p class="text-gray-600 dark:text-gray-400">
+            Frequently Asked Questions
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="faq-item bg-white/80 dark:bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden">
+            <button
+              class="faq-question w-full px-6 py-4 text-left flex items-center justify-between"
+              onclick="toggleFaq(this)">
+              <span class="font-semibold text-gray-900 dark:text-white"
+                >How long does it take to complete?</span
+              >
+              <svg
+                class="faq-arrow w-5 h-5 text-gray-500 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-4 text-gray-600 dark:text-gray-400">
+              Average completion time is 1-3 business days, depending on the
+              complexity of the request and order queue.
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="faq-item bg-white/80 dark:bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden">
+            <button
+              class="faq-question w-full px-6 py-4 text-left flex items-center justify-between"
+              onclick="toggleFaq(this)">
+              <span class="font-semibold text-gray-900 dark:text-white"
+                >Can I request revisions?</span
+              >
+              <svg
+                class="faq-arrow w-5 h-5 text-gray-500 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-4 text-gray-600 dark:text-gray-400">
+              Yes! Template Package includes 1 minor revision, while Full
+              Package includes 3 revisions.
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="faq-item bg-white/80 dark:bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden">
+            <button
+              class="faq-question w-full px-6 py-4 text-left flex items-center justify-between"
+              onclick="toggleFaq(this)">
+              <span class="font-semibold text-gray-900 dark:text-white"
+                >What data do I need to prepare?</span
+              >
+              <svg
+                class="faq-arrow w-5 h-5 text-gray-500 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-4 text-gray-600 dark:text-gray-400">
+              Prepare: professional photo, personal info, work experience,
+              education, skills, and contact. The maker will guide you in detail
+              via WhatsApp.
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="faq-item bg-white/80 dark:bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden">
+            <button
+              class="faq-question w-full px-6 py-4 text-left flex items-center justify-between"
+              onclick="toggleFaq(this)">
+              <span class="font-semibold text-gray-900 dark:text-white"
+                >What about the domain?</span
+              >
+              <svg
+                class="faq-arrow w-5 h-5 text-gray-500 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-4 text-gray-600 dark:text-gray-400">
+              For Full Package, you can request a custom domain (e.g.
+              yourname.com). Domain availability will be checked during order.
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="faq-item bg-white/80 dark:bg-white/5 backdrop-blur-lg rounded-xl overflow-hidden">
+            <button
+              class="faq-question w-full px-6 py-4 text-left flex items-center justify-between"
+              onclick="toggleFaq(this)">
+              <span class="font-semibold text-gray-900 dark:text-white"
+                >What payment methods are available?</span
+              >
+              <svg
+                class="faq-arrow w-5 h-5 text-gray-500 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="faq-answer px-6 pb-4 text-gray-600 dark:text-gray-400">
+              Payment is available via bank transfer (BCA, BNI, Mandiri) or
+              e-wallet (GoPay, OVO, Dana). Details will be provided during chat.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-white/10">
+      <div class="max-w-6xl mx-auto">
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-6">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <span
+              class="text-xl font-extrabold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent"
+              >D'CV</span
+            >
+            <span
+              class="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-500 bg-clip-text text-transparent">
+              Dibuatin CV
+            </span>
+          </div>
+
+          <!-- Contact -->
+          <div class="flex items-center space-x-6">
+            <a
+              href="https://wa.me/6285158912230"
+              target="_blank"
+              class="flex items-center text-gray-600 dark:text-gray-400 hover:text-green-500 transition-colors">
+              <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Copyright -->
+          <p class="text-gray-500 dark:text-gray-400 text-sm">
+            ©
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            MHS Developer
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Mobile Order Bar (Sticky Bottom) -->
+    <div class="mobile-order-bar md:hidden">
+      <div class="flex items-center justify-between mb-2">
+        <div>
+          <span class="text-sm text-gray-500 dark:text-gray-400">Total:</span>
+          <span
+            id="mobile-summary-price"
+            class="text-xl font-bold text-purple-600 dark:text-purple-400 ml-2"
+            >-</span
+          >
+        </div>
+      </div>
+      <button
+        id="mobile-order-btn"
+        disabled
+        class="btn-primary w-full py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 transition-all shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        <span>Order via WhatsApp</span>
+      </button>
+    </div>
+
+    <!-- Spacer for mobile order bar -->
+    <div class="h-28 md:hidden"></div>
+
+    <!-- FAQ Toggle Script -->
+    <script>
+      function toggleFaq(button) {
+        const item = button.closest(".faq-item");
+        item.classList.toggle("active");
+      }
+    </script>
+
+    <!-- Load JS Modules -->
+    <script src="src/js/data.js"></script>
+    <script src="src/js/theme.js"></script>
+    <script src="src/js/pricing.js"></script>
+    <script src="src/js/whatsapp.js"></script>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
