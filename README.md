@@ -64,10 +64,28 @@ dibuatin-cv/
 
 That's it! No build process or server required.
 
+## 📊 Architecture & Diagrams
+
+### 1. App Flow (Customer & Maker)
+
+![App Flow](assets/App%20Flow.drawio.png)
+
+### 2. Pricing Rules & WhatsApp Message Builder
+
+![Pricing Logic](assets/Pricing%20Rules.drawio.png)
+
+### 3. Static Landing Page Structure
+
+![Landing Page Structure](assets/Landing%20page%20static.drawio.png)
+
+### 4. UI State Diagram
+
+![UI State](assets/UI%20state.drawio.png)
+
 ## 📞 Contact
 
 WhatsApp: [6285158912230](https://wa.me/6285158912230)
 
 ---
 
-© 2026 MHS Developer
+© 2026 MHR Developer
